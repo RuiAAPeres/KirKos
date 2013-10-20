@@ -7,15 +7,54 @@
 //
 
 #import "EMAppDelegate.h"
+#import "EMMainScreenViewController.h"
+#import "EMAppDelegate+Style.h"
+
+#import "GAI.h"
 
 @implementation EMAppDelegate
 
+
+- (void)setGoogleAnalytics
+{
+    [GAI sharedInstance].trackUncaughtExceptions = YES;
+    
+    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
+    [GAI sharedInstance].dispatchInterval = 20;
+    
+    // Optional: set Logger to VERBOSE for debug information.
+    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
+    
+    // Initialize tracker.
+    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44995350-1"];
+    [[GAI sharedInstance] setDefaultTracker:tracker];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [self setGoogleAnalytics];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    NSString *nibToBeUsed = nil;
+    if (isiPhone5)
+    {
+        nibToBeUsed = @"EMMainScreenViewController5Inches";
+    }
+    else
+    {
+        nibToBeUsed = @"EMMainScreenViewController4Inches";
+    }
+    
+    EMMainScreenViewController *mainScreenViewController = [[EMMainScreenViewController alloc] initWithNibName:nibToBeUsed bundle:nil];
+    UINavigationController *controller = [[UINavigationController alloc] initWithRootViewController:mainScreenViewController];
+    
+    [self setupUI];
+    [[self window] setRootViewController:controller];
+
     return YES;
 }
 
@@ -38,7 +77,8 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [GAI sharedInstance].optOut =
+    ![[NSUserDefaults standardUserDefaults] boolForKey:@"allowTracking"];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

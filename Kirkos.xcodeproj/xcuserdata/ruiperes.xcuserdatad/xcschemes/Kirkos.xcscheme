@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C76C1282181070D200C4910D"
-               BuildableName = "Kirkos.app"
+               BuildableName = "KirKos.app"
                BlueprintName = "Kirkos"
                ReferencedContainer = "container:Kirkos.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C76C1282181070D200C4910D"
-            BuildableName = "Kirkos.app"
+            BuildableName = "KirKos.app"
             BlueprintName = "Kirkos"
             ReferencedContainer = "container:Kirkos.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C76C1282181070D200C4910D"
-            BuildableName = "Kirkos.app"
+            BuildableName = "KirKos.app"
             BlueprintName = "Kirkos"
             ReferencedContainer = "container:Kirkos.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C76C1282181070D200C4910D"
-            BuildableName = "Kirkos.app"
+            BuildableName = "KirKos.app"
             BlueprintName = "Kirkos"
             ReferencedContainer = "container:Kirkos.xcodeproj">
          </BuildableReference>

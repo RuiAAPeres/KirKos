@@ -1,1083 +1,759 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>C76C127A181070D200C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C128C181070D200C4910D</string>
-				<string>C76C12A5181070D200C4910D</string>
-				<string>C76C1285181070D200C4910D</string>
-				<string>C76C1284181070D200C4910D</string>
-			</array>
-			<key>indentWidth</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>tabWidth</key>
-			<string>4</string>
-			<key>usesTabs</key>
-			<string>0</string>
-		</dict>
-		<key>C76C127B181070D200C4910D</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>EM</string>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Emov</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>C76C129D181070D200C4910D</key>
-					<dict>
-						<key>TestTargetID</key>
-						<string>C76C1282181070D200C4910D</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>C76C127E181070D200C4910D</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>C76C127A181070D200C4910D</string>
-			<key>productRefGroup</key>
-			<string>C76C1284181070D200C4910D</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>C76C1282181070D200C4910D</string>
-				<string>C76C129D181070D200C4910D</string>
-			</array>
-		</dict>
-		<key>C76C127E181070D200C4910D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C76C12AD181070D200C4910D</string>
-				<string>C76C12AE181070D200C4910D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C76C127F181070D200C4910D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C76C12C61810715F00C4910D</string>
-				<string>C76C12C11810710D00C4910D</string>
-				<string>C76C12BF1810710D00C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C76C1280181070D200C4910D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C76C1289181070D200C4910D</string>
-				<string>C76C128B181070D200C4910D</string>
-				<string>C76C1287181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C76C1281181070D200C4910D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C76C12C71810715F00C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C76C1282181070D200C4910D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C76C12AF181070D200C4910D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C76C127F181070D200C4910D</string>
-				<string>C76C1280181070D200C4910D</string>
-				<string>C76C1281181070D200C4910D</string>
-				<string>E72E1E595EE142869C0B43DF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Kirkos</string>
-			<key>productName</key>
-			<string>Kirkos</string>
-			<key>productReference</key>
-			<string>C76C1283181070D200C4910D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>C76C1283181070D200C4910D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Kirkos.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C76C1284181070D200C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C1283181070D200C4910D</string>
-				<string>C76C129E181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C1285181070D200C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C1286181070D200C4910D</string>
-				<string>C76C1288181070D200C4910D</string>
-				<string>C76C128A181070D200C4910D</string>
-				<string>C76C129F181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C1286181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>C76C1287181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C1286181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C1288181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>C76C1289181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C1288181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C128A181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>C76C128B181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C128A181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C128C181070D200C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12C21810714E00C4910D</string>
-				<string>C76C12B51810710D00C4910D</string>
-				<string>C76C12B81810710D00C4910D</string>
-				<string>C76C12BB1810710D00C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Kirkos</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C129A181070D200C4910D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C76C12AC181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C76C129B181070D200C4910D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C76C12A0181070D200C4910D</string>
-				<string>C76C12A2181070D200C4910D</string>
-				<string>C76C12A1181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C76C129C181070D200C4910D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C76C12AA181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C76C129D181070D200C4910D</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C76C12B2181070D200C4910D</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C76C129A181070D200C4910D</string>
-				<string>C76C129B181070D200C4910D</string>
-				<string>C76C129C181070D200C4910D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C76C12A4181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>KirkosTests</string>
-			<key>productName</key>
-			<string>KirkosTests</string>
-			<key>productReference</key>
-			<string>C76C129E181070D200C4910D</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>C76C129E181070D200C4910D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>KirkosTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C76C129F181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>C76C12A0181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C129F181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12A1181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C1286181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12A2181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C128A181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12A3181070D200C4910D</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>C76C127B181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C76C1282181070D200C4910D</string>
-			<key>remoteInfo</key>
-			<string>Kirkos</string>
-		</dict>
-		<key>C76C12A4181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>C76C1282181070D200C4910D</string>
-			<key>targetProxy</key>
-			<string>C76C12A3181070D200C4910D</string>
-		</dict>
-		<key>C76C12A5181070D200C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12AB181070D200C4910D</string>
-				<string>C76C12A6181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>KirkosTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12A6181070D200C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12A7181070D200C4910D</string>
-				<string>C76C12A8181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12A7181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>KirkosTests-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12A8181070D200C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12A9181070D200C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12A9181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12AA181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C12A8181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12AB181070D200C4910D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>KirkosTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12AC181070D200C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C12AB181070D200C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12AD181070D200C4910D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_MISSING_NEWLINE</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_CHECK_SWITCH_STATEMENTS</key>
-				<string>YES</string>
-				<key>GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED</key>
-				<string>YES</string>
-				<key>GCC_WARN_MISSING_PARENTHESES</key>
-				<string>YES</string>
-				<key>GCC_WARN_SHADOW</key>
-				<string>YES</string>
-				<key>GCC_WARN_SIGN_COMPARE</key>
-				<string>YES</string>
-				<key>GCC_WARN_TYPECHECK_CALLS_TO_PRINTF</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_LABEL</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VALUE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>RUN_CLANG_STATIC_ANALYZER</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C76C12AE181070D200C4910D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_MISSING_NEWLINE</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_CHECK_SWITCH_STATEMENTS</key>
-				<string>YES</string>
-				<key>GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED</key>
-				<string>YES</string>
-				<key>GCC_WARN_MISSING_PARENTHESES</key>
-				<string>YES</string>
-				<key>GCC_WARN_SHADOW</key>
-				<string>YES</string>
-				<key>GCC_WARN_SIGN_COMPARE</key>
-				<string>YES</string>
-				<key>GCC_WARN_TYPECHECK_CALLS_TO_PRINTF</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_LABEL</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VALUE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>RUN_CLANG_STATIC_ANALYZER</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C76C12AF181070D200C4910D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C76C12B0181070D200C4910D</string>
-				<string>C76C12B1181070D200C4910D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C76C12B0181070D200C4910D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Kirkos/Supporting Files/Kirkos-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Kirkos/Supporting Files/Kirkos-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C76C12B1181070D200C4910D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Kirkos/Supporting Files/Kirkos-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Kirkos/Supporting Files/Kirkos-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C76C12B2181070D200C4910D</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C76C12B3181070D200C4910D</string>
-				<string>C76C12B4181070D200C4910D</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C76C12B3181070D200C4910D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Kirkos.app/Kirkos</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Kirkos/Kirkos-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>KirkosTests/KirkosTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C76C12B4181070D200C4910D</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>BUNDLE_LOADER</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Kirkos.app/Kirkos</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Kirkos/Kirkos-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>KirkosTests/KirkosTests-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUNDLE_LOADER)</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>xctest</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C76C12B51810710D00C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12B61810710D00C4910D</string>
-				<string>C76C12B71810710D00C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>App Delegate</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12B61810710D00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EMAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12B71810710D00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>EMAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12B81810710D00C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12B91810710D00C4910D</string>
-				<string>C76C12BA1810710D00C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12B91810710D00C4910D</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Images</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12BA1810710D00C4910D</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Localization</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12BB1810710D00C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12BC1810710D00C4910D</string>
-				<string>C76C12BD1810710D00C4910D</string>
-				<string>C76C12BE1810710D00C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12BC1810710D00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Kirkos-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12BD1810710D00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Kirkos-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12BE1810710D00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12BF1810710D00C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C12B71810710D00C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12C11810710D00C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C12BE1810710D00C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12C21810714E00C4910D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C76C12C31810715F00C4910D</string>
-				<string>C76C12C41810715F00C4910D</string>
-				<string>C76C12C51810715F00C4910D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12C31810715F00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>EMMainScreenViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12C41810715F00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>EMMainScreenViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12C51810715F00C4910D</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>EMMainScreenViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C76C12C61810715F00C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C12C41810715F00C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C76C12C71810715F00C4910D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C76C12C51810715F00C4910D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E72E1E595EE142869C0B43DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Warn for TODO and FIXME comments</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>KEYWORDS="TODO:|FIXME:|\?\?\?:|\!\!\!:"
-FILE_EXTENSIONS="h|m|mm|c|cpp"
-find -E "${SRCROOT}" -ipath "${SRCROOT}/pods" -prune -o \( -regex ".*\.($FILE_EXTENSIONS)$" \) -print0 | xargs -0 egrep --with-filename --line-number --only-matching "($KEYWORDS).*\$" | perl -p -e "s/($KEYWORDS)/ warning: \$1/"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>1</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>C76C127B181070D200C4910D</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3FA0480139C547BCA9DA7891 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BC5DCD86B142A781920700 /* libPods.a */; };
+		C70531DE1811EB020033D25B /* EMAppDelegate+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = C70531DD1811EB020033D25B /* EMAppDelegate+Style.m */; };
+		C72FEDA21812C795005BB932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72FEDA11812C795005BB932 /* Images.xcassets */; };
+		C72FEDA51812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C72FEDA41812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m */; };
+		C72FEDA918132A44005BB932 /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = C72FEDA818132A44005BB932 /* UIImage+Orientation.m */; };
+		C72FEDAC18133A5F005BB932 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C72FEDAB18133A5F005BB932 /* UIColor+Hex.m */; };
+		C72FEDB618133C35005BB932 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDB518133C35005BB932 /* libGoogleAnalyticsServices.a */; };
+		C72FEDB818133C4D005BB932 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDB718133C4D005BB932 /* libGoogleAnalyticsServices.a */; };
+		C72FEDBA18133C55005BB932 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDB918133C55005BB932 /* CoreData.framework */; };
+		C72FEDBC18133C5D005BB932 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDBB18133C5D005BB932 /* SystemConfiguration.framework */; };
+		C72FEDBE18133C66005BB932 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDBD18133C66005BB932 /* libz.dylib */; };
+		C72FEDC018133E80005BB932 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDBF18133E80005BB932 /* AdSupport.framework */; };
+		C74B3E2218143362002A015F /* EMMainScreenViewController4Inches.xib in Resources */ = {isa = PBXBuildFile; fileRef = C74B3E2118143362002A015F /* EMMainScreenViewController4Inches.xib */; };
+		C76C1287181070D200C4910D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C1286181070D200C4910D /* Foundation.framework */; };
+		C76C1289181070D200C4910D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C1288181070D200C4910D /* CoreGraphics.framework */; };
+		C76C128B181070D200C4910D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C128A181070D200C4910D /* UIKit.framework */; };
+		C76C12A0181070D200C4910D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C129F181070D200C4910D /* XCTest.framework */; };
+		C76C12A1181070D200C4910D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C1286181070D200C4910D /* Foundation.framework */; };
+		C76C12A2181070D200C4910D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C128A181070D200C4910D /* UIKit.framework */; };
+		C76C12AA181070D200C4910D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C76C12A8181070D200C4910D /* InfoPlist.strings */; };
+		C76C12AC181070D200C4910D /* KirkosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12AB181070D200C4910D /* KirkosTests.m */; };
+		C76C12BF1810710D00C4910D /* EMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12B71810710D00C4910D /* EMAppDelegate.m */; };
+		C76C12C11810710D00C4910D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12BE1810710D00C4910D /* main.m */; };
+		C76C12C61810715F00C4910D /* EMMainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12C41810715F00C4910D /* EMMainScreenViewController.m */; };
+		C76C12C71810715F00C4910D /* EMMainScreenViewController5Inches.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76C12C51810715F00C4910D /* EMMainScreenViewController5Inches.xib */; };
+		C76C12CD1810738000C4910D /* EMMainScreenViewController+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12CC1810738000C4910D /* EMMainScreenViewController+Style.m */; };
+		C79158BB18147EDE00E38CDD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79158BA18147EDE00E38CDD /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C76C12A3181070D200C4910D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C76C127B181070D200C4910D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C76C1282181070D200C4910D;
+			remoteInfo = Kirkos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09BC5DCD86B142A781920700 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F86EEDF06A404182A5AEF9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		C70531DC1811EB020033D25B /* EMAppDelegate+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMAppDelegate+Style.h"; sourceTree = "<group>"; };
+		C70531DD1811EB020033D25B /* EMAppDelegate+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMAppDelegate+Style.m"; sourceTree = "<group>"; };
+		C72FEDA11812C795005BB932 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C72FEDA31812FEEF005BB932 /* EMMainScreenViewController+TakePicture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+TakePicture.h"; sourceTree = "<group>"; };
+		C72FEDA41812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+TakePicture.m"; sourceTree = "<group>"; };
+		C72FEDA718132A44005BB932 /* UIImage+Orientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Orientation.h"; sourceTree = "<group>"; };
+		C72FEDA818132A44005BB932 /* UIImage+Orientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Orientation.m"; sourceTree = "<group>"; };
+		C72FEDAA18133A5F005BB932 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		C72FEDAB18133A5F005BB932 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		C72FEDAF18133C21005BB932 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		C72FEDB018133C21005BB932 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		C72FEDB118133C21005BB932 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		C72FEDB218133C21005BB932 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		C72FEDB318133C21005BB932 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		C72FEDB418133C21005BB932 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		C72FEDB518133C35005BB932 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		C72FEDB718133C4D005BB932 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = ../../../Desktop/GoogleAnalyticsServicesiOS_3.02/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		C72FEDB918133C55005BB932 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C72FEDBB18133C5D005BB932 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C72FEDBD18133C66005BB932 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C72FEDBF18133E80005BB932 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		C74B3E2118143362002A015F /* EMMainScreenViewController4Inches.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMainScreenViewController4Inches.xib; sourceTree = "<group>"; };
+		C76C1283181070D200C4910D /* KirKos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KirKos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76C1286181070D200C4910D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C76C1288181070D200C4910D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C76C128A181070D200C4910D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C76C129E181070D200C4910D /* KirkosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KirkosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76C129F181070D200C4910D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C76C12A7181070D200C4910D /* KirkosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KirkosTests-Info.plist"; sourceTree = "<group>"; };
+		C76C12A9181070D200C4910D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C76C12AB181070D200C4910D /* KirkosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KirkosTests.m; sourceTree = "<group>"; };
+		C76C12B61810710D00C4910D /* EMAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMAppDelegate.h; sourceTree = "<group>"; };
+		C76C12B71810710D00C4910D /* EMAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMAppDelegate.m; sourceTree = "<group>"; };
+		C76C12BC1810710D00C4910D /* Kirkos-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Kirkos-Info.plist"; sourceTree = "<group>"; };
+		C76C12BD1810710D00C4910D /* Kirkos-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Kirkos-Prefix.pch"; sourceTree = "<group>"; };
+		C76C12BE1810710D00C4910D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C76C12C31810715F00C4910D /* EMMainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMainScreenViewController.h; sourceTree = "<group>"; };
+		C76C12C41810715F00C4910D /* EMMainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMainScreenViewController.m; sourceTree = "<group>"; };
+		C76C12C51810715F00C4910D /* EMMainScreenViewController5Inches.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMainScreenViewController5Inches.xib; sourceTree = "<group>"; };
+		C76C12C91810730900C4910D /* EMConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMConstants.h; sourceTree = "<group>"; };
+		C76C12CB1810738000C4910D /* EMMainScreenViewController+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+Style.h"; sourceTree = "<group>"; };
+		C76C12CC1810738000C4910D /* EMMainScreenViewController+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+Style.m"; sourceTree = "<group>"; };
+		C76C12EF18109B3000C4910D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		C76C12F118109B3900C4910D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		C76C12F318109B4200C4910D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C76C12F518109B4700C4910D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C76C12F718109B4E00C4910D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C79158BA18147EDE00E38CDD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C76C1280181070D200C4910D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72FEDC018133E80005BB932 /* AdSupport.framework in Frameworks */,
+				C72FEDBE18133C66005BB932 /* libz.dylib in Frameworks */,
+				C72FEDBC18133C5D005BB932 /* SystemConfiguration.framework in Frameworks */,
+				C72FEDBA18133C55005BB932 /* CoreData.framework in Frameworks */,
+				C72FEDB818133C4D005BB932 /* libGoogleAnalyticsServices.a in Frameworks */,
+				C76C1289181070D200C4910D /* CoreGraphics.framework in Frameworks */,
+				C76C128B181070D200C4910D /* UIKit.framework in Frameworks */,
+				C76C1287181070D200C4910D /* Foundation.framework in Frameworks */,
+				C72FEDB618133C35005BB932 /* libGoogleAnalyticsServices.a in Frameworks */,
+				3FA0480139C547BCA9DA7891 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76C129B181070D200C4910D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76C12A0181070D200C4910D /* XCTest.framework in Frameworks */,
+				C76C12A2181070D200C4910D /* UIKit.framework in Frameworks */,
+				C76C12A1181070D200C4910D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C70531DB1811EAE70033D25B /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				C70531DC1811EB020033D25B /* EMAppDelegate+Style.h */,
+				C70531DD1811EB020033D25B /* EMAppDelegate+Style.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		C72FEDA618132A28005BB932 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C72FEDA718132A44005BB932 /* UIImage+Orientation.h */,
+				C72FEDA818132A44005BB932 /* UIImage+Orientation.m */,
+				C72FEDAA18133A5F005BB932 /* UIColor+Hex.h */,
+				C72FEDAB18133A5F005BB932 /* UIColor+Hex.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C72FEDAD18133C21005BB932 /* 3rd Party */ = {
+			isa = PBXGroup;
+			children = (
+				C72FEDAE18133C21005BB932 /* Google Analytics */,
+			);
+			path = "3rd Party";
+			sourceTree = "<group>";
+		};
+		C72FEDAE18133C21005BB932 /* Google Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				C72FEDB518133C35005BB932 /* libGoogleAnalyticsServices.a */,
+				C72FEDAF18133C21005BB932 /* GAI.h */,
+				C72FEDB018133C21005BB932 /* GAIDictionaryBuilder.h */,
+				C72FEDB118133C21005BB932 /* GAIFields.h */,
+				C72FEDB218133C21005BB932 /* GAILogger.h */,
+				C72FEDB318133C21005BB932 /* GAITrackedViewController.h */,
+				C72FEDB418133C21005BB932 /* GAITracker.h */,
+			);
+			path = "Google Analytics";
+			sourceTree = "<group>";
+		};
+		C76C127A181070D200C4910D = {
+			isa = PBXGroup;
+			children = (
+				C76C128C181070D200C4910D /* Kirkos */,
+				C76C12A5181070D200C4910D /* KirkosTests */,
+				C76C1285181070D200C4910D /* Frameworks */,
+				C76C1284181070D200C4910D /* Products */,
+				53F86EEDF06A404182A5AEF9 /* Pods.xcconfig */,
+			);
+			indentWidth = 4;
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		C76C1284181070D200C4910D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C76C1283181070D200C4910D /* KirKos.app */,
+				C76C129E181070D200C4910D /* KirkosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C76C1285181070D200C4910D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C72FEDBF18133E80005BB932 /* AdSupport.framework */,
+				C72FEDBD18133C66005BB932 /* libz.dylib */,
+				C72FEDBB18133C5D005BB932 /* SystemConfiguration.framework */,
+				C72FEDB918133C55005BB932 /* CoreData.framework */,
+				C72FEDB718133C4D005BB932 /* libGoogleAnalyticsServices.a */,
+				C76C12F718109B4E00C4910D /* QuartzCore.framework */,
+				C76C12F518109B4700C4910D /* AVFoundation.framework */,
+				C76C12F318109B4200C4910D /* OpenGLES.framework */,
+				C76C12F118109B3900C4910D /* CoreVideo.framework */,
+				C76C12EF18109B3000C4910D /* CoreMedia.framework */,
+				C76C1286181070D200C4910D /* Foundation.framework */,
+				C76C1288181070D200C4910D /* CoreGraphics.framework */,
+				C76C128A181070D200C4910D /* UIKit.framework */,
+				C76C129F181070D200C4910D /* XCTest.framework */,
+				09BC5DCD86B142A781920700 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C76C128C181070D200C4910D /* Kirkos */ = {
+			isa = PBXGroup;
+			children = (
+				C72FEDAD18133C21005BB932 /* 3rd Party */,
+				C72FEDA618132A28005BB932 /* Categories */,
+				C76C12C81810728000C4910D /* Constants */,
+				C76C12C21810714E00C4910D /* View Controller */,
+				C76C12B51810710D00C4910D /* App Delegate */,
+				C76C12B81810710D00C4910D /* Resources */,
+				C76C12BB1810710D00C4910D /* Supporting Files */,
+			);
+			path = Kirkos;
+			sourceTree = "<group>";
+		};
+		C76C12A5181070D200C4910D /* KirkosTests */ = {
+			isa = PBXGroup;
+			children = (
+				C76C12AB181070D200C4910D /* KirkosTests.m */,
+				C76C12A6181070D200C4910D /* Supporting Files */,
+			);
+			path = KirkosTests;
+			sourceTree = "<group>";
+		};
+		C76C12A6181070D200C4910D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C76C12A7181070D200C4910D /* KirkosTests-Info.plist */,
+				C76C12A8181070D200C4910D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C76C12B51810710D00C4910D /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C70531DB1811EAE70033D25B /* Category */,
+				C76C12B61810710D00C4910D /* EMAppDelegate.h */,
+				C76C12B71810710D00C4910D /* EMAppDelegate.m */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		C76C12B81810710D00C4910D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C76C12B91810710D00C4910D /* Images */,
+				C76C12BA1810710D00C4910D /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C76C12B91810710D00C4910D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C72FEDA11812C795005BB932 /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		C76C12BA1810710D00C4910D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				C79158BA18147EDE00E38CDD /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		C76C12BB1810710D00C4910D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C76C12BC1810710D00C4910D /* Kirkos-Info.plist */,
+				C76C12BD1810710D00C4910D /* Kirkos-Prefix.pch */,
+				C76C12BE1810710D00C4910D /* main.m */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C76C12C21810714E00C4910D /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C76C12CA1810737500C4910D /* Categories */,
+				C76C12C31810715F00C4910D /* EMMainScreenViewController.h */,
+				C76C12C41810715F00C4910D /* EMMainScreenViewController.m */,
+				C76C12C51810715F00C4910D /* EMMainScreenViewController5Inches.xib */,
+				C74B3E2118143362002A015F /* EMMainScreenViewController4Inches.xib */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		C76C12C81810728000C4910D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C76C12C91810730900C4910D /* EMConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C76C12CA1810737500C4910D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C76C12CB1810738000C4910D /* EMMainScreenViewController+Style.h */,
+				C76C12CC1810738000C4910D /* EMMainScreenViewController+Style.m */,
+				C72FEDA31812FEEF005BB932 /* EMMainScreenViewController+TakePicture.h */,
+				C72FEDA41812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C76C1282181070D200C4910D /* Kirkos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76C12AF181070D200C4910D /* Build configuration list for PBXNativeTarget "Kirkos" */;
+			buildPhases = (
+				F65628DF57D7479C842648B4 /* Check Pods Manifest.lock */,
+				C76C127F181070D200C4910D /* Sources */,
+				C76C1280181070D200C4910D /* Frameworks */,
+				C76C1281181070D200C4910D /* Resources */,
+				E72E1E595EE142869C0B43DF /* Warn for TODO and FIXME comments */,
+				362342328EDD4112B26E60FA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kirkos;
+			productName = Kirkos;
+			productReference = C76C1283181070D200C4910D /* KirKos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C76C129D181070D200C4910D /* KirkosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76C12B2181070D200C4910D /* Build configuration list for PBXNativeTarget "KirkosTests" */;
+			buildPhases = (
+				C76C129A181070D200C4910D /* Sources */,
+				C76C129B181070D200C4910D /* Frameworks */,
+				C76C129C181070D200C4910D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C76C12A4181070D200C4910D /* PBXTargetDependency */,
+			);
+			name = KirkosTests;
+			productName = KirkosTests;
+			productReference = C76C129E181070D200C4910D /* KirkosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C76C127B181070D200C4910D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Emov;
+				TargetAttributes = {
+					C76C1282181070D200C4910D = {
+						DevelopmentTeam = G99PDGYAB4;
+					};
+					C76C129D181070D200C4910D = {
+						TestTargetID = C76C1282181070D200C4910D;
+					};
+				};
+			};
+			buildConfigurationList = C76C127E181070D200C4910D /* Build configuration list for PBXProject "Kirkos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C76C127A181070D200C4910D;
+			productRefGroup = C76C1284181070D200C4910D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C76C1282181070D200C4910D /* Kirkos */,
+				C76C129D181070D200C4910D /* KirkosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C76C1281181070D200C4910D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C72FEDA21812C795005BB932 /* Images.xcassets in Resources */,
+				C79158BB18147EDE00E38CDD /* Localizable.strings in Resources */,
+				C74B3E2218143362002A015F /* EMMainScreenViewController4Inches.xib in Resources */,
+				C76C12C71810715F00C4910D /* EMMainScreenViewController5Inches.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76C129C181070D200C4910D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76C12AA181070D200C4910D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		362342328EDD4112B26E60FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E72E1E595EE142869C0B43DF /* Warn for TODO and FIXME comments */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Warn for TODO and FIXME comments";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
+		};
+		F65628DF57D7479C842648B4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C76C127F181070D200C4910D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76C12C61810715F00C4910D /* EMMainScreenViewController.m in Sources */,
+				C76C12C11810710D00C4910D /* main.m in Sources */,
+				C70531DE1811EB020033D25B /* EMAppDelegate+Style.m in Sources */,
+				C72FEDA918132A44005BB932 /* UIImage+Orientation.m in Sources */,
+				C76C12BF1810710D00C4910D /* EMAppDelegate.m in Sources */,
+				C72FEDAC18133A5F005BB932 /* UIColor+Hex.m in Sources */,
+				C76C12CD1810738000C4910D /* EMMainScreenViewController+Style.m in Sources */,
+				C72FEDA51812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76C129A181070D200C4910D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76C12AC181070D200C4910D /* KirkosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C76C12A4181070D200C4910D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C76C1282181070D200C4910D /* Kirkos */;
+			targetProxy = C76C12A3181070D200C4910D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C76C12A8181070D200C4910D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76C12A9181070D200C4910D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C76C12AD181070D200C4910D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C76C12AE181070D200C4910D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C76C12B0181070D200C4910D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F86EEDF06A404182A5AEF9 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Rui Barroca (S7UXWXJ6P8)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kirkos/Supporting Files/Kirkos-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/FXBlurView\"",
+				);
+				INFOPLIST_FILE = "Kirkos/Supporting Files/Kirkos-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ruiperes/Documents/iOS\\ Dev/Kirkos/Kirkos/3rd\\ Party/Google\\ Analytics",
+					/Users/ruiperes/Desktop/GoogleAnalyticsServicesiOS_3.02,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Accelerate,
+					"-all_load",
+				);
+				PRODUCT_NAME = KirKos;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C76C12B1181070D200C4910D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53F86EEDF06A404182A5AEF9 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rui Barroca (G99PDGYAB4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Rui Barroca (G99PDGYAB4)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kirkos/Supporting Files/Kirkos-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/FXBlurView\"",
+				);
+				INFOPLIST_FILE = "Kirkos/Supporting Files/Kirkos-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ruiperes/Documents/iOS\\ Dev/Kirkos/Kirkos/3rd\\ Party/Google\\ Analytics",
+					/Users/ruiperes/Desktop/GoogleAnalyticsServicesiOS_3.02,
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					Accelerate,
+					"-all_load",
+				);
+				PRODUCT_NAME = KirKos;
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C76C12B3181070D200C4910D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kirkos.app/Kirkos";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kirkos/Kirkos-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KirkosTests/KirkosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C76C12B4181070D200C4910D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Kirkos.app/Kirkos";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Kirkos/Kirkos-Prefix.pch";
+				INFOPLIST_FILE = "KirkosTests/KirkosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C76C127E181070D200C4910D /* Build configuration list for PBXProject "Kirkos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76C12AD181070D200C4910D /* Debug */,
+				C76C12AE181070D200C4910D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76C12AF181070D200C4910D /* Build configuration list for PBXNativeTarget "Kirkos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76C12B0181070D200C4910D /* Debug */,
+				C76C12B1181070D200C4910D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76C12B2181070D200C4910D /* Build configuration list for PBXNativeTarget "KirkosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76C12B3181070D200C4910D /* Debug */,
+				C76C12B4181070D200C4910D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C76C127B181070D200C4910D /* Project object */;
+}
