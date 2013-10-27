@@ -160,6 +160,12 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
     
     [activityController setCompletionHandler:^(NSString *activityType, BOOL completed)
      {
+         if (completed && activityType)
+         {
+             id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
+             [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
+                                    set:[NSString stringWithFormat:@"Photo shared -> %@",activityType] forKey:kGAIEventAction] build]];
+         }
     }];
     
     [self presentViewController:activityController animated:YES completion:nil];
@@ -198,7 +204,7 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
              
              id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
              [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
-                                    set:@"Photo saved!" forKey:kGAIScreenName] build]];             
+                                    set:@"Photo saved!" forKey:kGAIEventAction] build]];
          }
      }];
 }

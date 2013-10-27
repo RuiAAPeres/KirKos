@@ -56,6 +56,7 @@ static CGFloat imagePickerViewControllerOffset = 32.0f;
     FXBlurView *blurView = [[FXBlurView alloc] initWithFrame:imageViewFrame];
     blurView.dynamic = NO;
     blurView.blurRadius = 25.0f;
+    [blurView setTintColor:[UIColor clearColor]];
     
     int radius = circleFrame.size.width/2.0f;
     UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:imageViewFrame cornerRadius:0];

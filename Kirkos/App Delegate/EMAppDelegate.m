@@ -11,6 +11,8 @@
 #import "EMAppDelegate+Style.h"
 
 #import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
 
 @implementation EMAppDelegate
 
@@ -19,15 +21,17 @@
 {
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     
-    // Optional: set Google Analytics dispatch interval to e.g. 20 seconds.
-    [GAI sharedInstance].dispatchInterval = 20;
     
-    // Optional: set Logger to VERBOSE for debug information.
-    [[[GAI sharedInstance] logger] setLogLevel:kGAILogLevelVerbose];
-    
-    // Initialize tracker.
-    id<GAITracker> tracker = [[GAI sharedInstance] trackerWithTrackingId:@"UA-44995350-1"];
+    static NSString *kGaPropertyId = @"UA-44995350-1";
+    id tracker = [[GAI sharedInstance] trackerWithTrackingId:kGaPropertyId];
+    [tracker set:kGAIUseSecure value:[@NO stringValue]];
     [[GAI sharedInstance] setDefaultTracker:tracker];
+    [GAI sharedInstance].dispatchInterval = 1;
+
+    [tracker send:[[[GAIDictionaryBuilder createEventWithCategory:@"UX"
+                                                           action:@"appstart"
+                                                            label:nil
+                                                            value:nil] set:@"start" forKey:kGAISessionControl] build]];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -68,6 +72,7 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    [[GAI sharedInstance] dispatch];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
@@ -77,8 +82,6 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    [GAI sharedInstance].optOut =
-    ![[NSUserDefaults standardUserDefaults] boolForKey:@"allowTracking"];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
