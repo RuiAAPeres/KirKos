@@ -2,7 +2,7 @@ KirKos, Focus on the most important
 ======
 
 
-KirKos is an application I did in less than 24 hours, as a challenge. You can read more about it [here](codeplease.wordpress.com/2013/11/02/kirkos-app-development-under-24h) coding standards will be served as the guide for this application.
+KirKos is an application I did in less than 24 hours, as a challenge. You can read more about it [here](http://codeplease.wordpress.com/2013/11/02/kirkos-app-development-under-24h) coding standards will be served as the guide for this application.
 
 
 ### Why sharing it?
