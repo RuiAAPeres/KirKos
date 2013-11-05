@@ -11,7 +11,7 @@ Why not? The application is for free. The code base is less than 1000 lines. I t
 ### What now?
 
 
-Well, that's up to you. If you would like to see some feature on KirKos you are more than welcome to make a pull request. After reviwing it I will merge it. If it's a considerable contribution, I will take care of pushing to the AppStore, along with the name of the contributor on the comments. If it's a minor one, I will hold it, until I have enough to justify pushing to the App Store.
+Well, that's up to you. If you would like to see some feature on KirKos you are more than welcome to make a pull request. After reviwing it I will merge it. If it's a considerable contribution, I will take care of pushing to the App Store, along with the name of the contributor on the comments. If it's a minor one, I will hold it, until I have enough to justify pushing it.
 
 
 ### Contact
