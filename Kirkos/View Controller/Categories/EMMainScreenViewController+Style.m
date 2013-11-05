@@ -7,7 +7,6 @@
 //
 
 #import "EMMainScreenViewController+Style.h"
-#import "FXBlurView.h"
 #import "EMConstants.h"
 #import "UIColor+Hex.h"
 
@@ -40,86 +39,9 @@ static NSString *const kShareButtonImage = @"btn_share";
 
 static NSString *const kKirKosTitleImage = @"KirKos_Logo";
 
-
-static CGRect imageViewFrame = {{0.0f,0.0f},{320.0f,320.0f}};
-static CGRect circleFrame = {{180.0f,180.0f},{300.0f,300.0f}};
 static CGRect buttonFrame = {{0.0f,0.0f},{44.0f,44.0f}};
 
-static CGFloat imagePickerViewControllerOffset = 32.0f;
-
 @implementation EMMainScreenViewController (Style)
-
-#pragma mark - Build Methods
-
-+ (FXBlurView *)buildBlurView
-{
-    FXBlurView *blurView = [[FXBlurView alloc] initWithFrame:imageViewFrame];
-    blurView.dynamic = NO;
-    blurView.blurRadius = 25.0f;
-    [blurView setTintColor:[UIColor clearColor]];
-    
-    int radius = circleFrame.size.width/2.0f;
-    UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:imageViewFrame cornerRadius:0];
-    UIBezierPath *circlePath = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(10.0f, 10.0f, 2.0*radius, 2.0*radius) cornerRadius:radius];
-    [path appendPath:circlePath];
-    [path setUsesEvenOddFillRule:YES];
-    
-    CAShapeLayer *fillLayer = [CAShapeLayer layer];
-    fillLayer.path = path.CGPath;
-    fillLayer.fillRule = kCAFillRuleEvenOdd;
-    fillLayer.fillColor = [UIColor whiteColor].CGColor;
-    
-    blurView.layer.mask = fillLayer;
-    
-    return blurView;
-}
-
-
-+ (UIImagePickerController *)buildPhotoPickerController;
-{
-    UIImagePickerController *imagePicker= [[UIImagePickerController alloc] init];
-    [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
-    [imagePicker setShowsCameraControls:NO];
-    
-    return imagePicker;
-}
-
-+ (UIImagePickerController *)buildGalleryPickerController
-{
-    UIImagePickerController *imagePicker= [[UIImagePickerController alloc] init];
-    [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
-    imagePicker.navigationBar.barTintColor = [UIColor colorWithHexString:NAVBAR_GREY];
-    [imagePicker.navigationBar setTintColor:[UIColor whiteColor]];
-    imagePicker.navigationBar.translucent = NO;
-    [imagePicker setAllowsEditing:YES];
-    
-    return imagePicker;
-}
-
-+ (UIView *)buildCircleWithCenter:(CGPoint)center
-{
-    UIView *circleView = [[UIView alloc] initWithFrame:circleFrame];
-    
-    [circleView.layer setCornerRadius:circleView.frame.size.width/2.0f];
-    [circleView setBackgroundColor:[UIColor clearColor]];
-    [circleView.layer setBorderWidth:1.0f];
-    [circleView.layer setBorderColor:[UIColor whiteColor].CGColor];
-    [circleView setCenter:CGPointMake(center.x, center.y - imagePickerViewControllerOffset)];
-    
-    return circleView;
-}
-
-
-+ (UIImageView *)buildImageViewWithImage:(UIImage *)imageTaken
-{
-    UIImageView *selectedImageView = [[UIImageView alloc] initWithFrame:imageViewFrame];
-
-    CGImageRef imageRef = CGImageCreateWithImageInRect([imageTaken CGImage], CGRectMake(0.0f, 0.0f, imageTaken.size.width, imageTaken.size.width));
-    [selectedImageView setImage:[UIImage imageWithCGImage:imageRef]];
-    CGImageRelease(imageRef);
-    
-    return selectedImageView;
-}
 
 #pragma mark - Setup UI Methods
 
@@ -133,11 +55,8 @@ static CGFloat imagePickerViewControllerOffset = 32.0f;
         [self.flashButton removeFromSuperview];
     }
     
-    {
-        self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:kKirKosTitleImage]];
-    }
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:kKirKosTitleImage]];
     
-    // Colour
     {
         [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHexString:NAVBAR_GREY]];
         [[self actionsView] setBackgroundColor:[UIColor colorWithHexString:NAVBAR_GREY]];
@@ -145,14 +64,12 @@ static CGFloat imagePickerViewControllerOffset = 32.0f;
         [[self sliderView] setBackgroundColor:[UIColor colorWithHexString:LIGHT_GREY]];
     }
     
-    // NavigationBar
     {
         self.edgesForExtendedLayout = UIRectEdgeNone;
         self.navigationController.navigationBar.translucent = NO;
     }
     
-    // Button's Images
-    {        
+    {
         [self.galleryButton setImage:[UIImage imageNamed:kGalleryImageHighlighted] forState:UIControlStateHighlighted];
         [self.galleryButton setImage:[UIImage imageNamed:kGalleryImageNormal] forState:UIControlStateNormal];
         
@@ -188,11 +105,22 @@ static CGFloat imagePickerViewControllerOffset = 32.0f;
         
         UIImage *highlightedImage = [UIImage imageNamed:kDeleteButtonImageHighlighted];
         [closeButton setBackgroundImage:highlightedImage forState:UIControlStateHighlighted];
-        
-        [closeButton addTarget:self action:@selector(closeAction:) forControlEvents:UIControlEventTouchUpInside];
-        
+                
         self.closeBarButton = [[UIBarButtonItem alloc] initWithCustomView:closeButton];
     }
 }
+
+- (void)orderViews
+{
+    [[self view] bringSubviewToFront:self.flashButton];
+    [[self view] bringSubviewToFront:self.switchCameraMode];
+    
+    [[self view] bringSubviewToFront:self.topImage];
+    [[self view] bringSubviewToFront:self.botImage];
+    
+    [[self view] bringSubviewToFront:self.actionsView];
+    [[self view] bringSubviewToFront:self.cameraTools];
+}
+
 
 @end

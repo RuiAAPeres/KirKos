@@ -7,8 +7,12 @@
 //
 
 #import "EMMainScreenViewController.h"
+
 #import "EMMainScreenViewController+Style.h"
-#import "EMMainScreenViewController+TakePicture.h"
+#import "EMMainScreenViewController+ViewsFactory.h"
+#import "EMMainScreenViewController+ControllersFactory.h"
+#import "EMMainScreenViewController+Animations.h"
+
 #import "UIImage+Orientation.h"
 #import "EMConstants.h"
 #import "FXBlurView.h"
@@ -32,38 +36,9 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
 
 @implementation EMMainScreenViewController
 
-#pragma mark - UIView lifecycle
-
-- (void)openObjectiveWithCompletionBlock:(void(^)())completionBlock
-{
-    [UIView animateWithDuration:0.1f animations:^{
-        
-        [self.topImage setFrame:CGRectMake(0.0f, -self.topImage.frame.size.height, self.topImage.frame.size.width, self.topImage.frame.size.height)];
-        
-        [self.botImage setFrame:CGRectMake(0.0f, 320.0f, self.botImage.frame.size.width, self.botImage.frame.size.height)];
-    }completion:^(BOOL finished) {
-        completionBlock();
-    }];
-}
-
-- (void)closeObjectiveWithCompletionBlock:(void(^)())completionBlock
-{
-    [UIView animateWithDuration:0.1f animations:^{
-        
-        [self.topImage setFrame:CGRectMake(0.0f, 0.0f, self.topImage.frame.size.width, self.topImage.frame.size.height)];
-        
-        [self.botImage setFrame:CGRectMake(0.0f, 160.0f, self.botImage.frame.size.width, self.botImage.frame.size.height)];
-    }
-    completion:^(BOOL finished)
-    {
-         completionBlock();
-    }];
-}
-
 - (void)viewDidAppear:(BOOL)animated
 {
-    [self openObjectiveWithCompletionBlock:^{
-    }];
+    [self animateOpenObjectiveWithCompletionBlock:^{}];
 }
 
 - (void)viewDidLoad
@@ -80,31 +55,16 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
     [self.photoImagePicker setCameraOverlayView:self.circle];
     self.photoImagePicker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
     
-    [[self view] bringSubviewToFront:self.flashButton];
-    [[self view] bringSubviewToFront:self.switchCameraMode];
+    [self.cancelButton addTarget:self action:@selector(handleEditionToPickingPhoto) forControlEvents:UIControlEventTouchUpInside];
     
-    [[self view] bringSubviewToFront:self.topImage];
-    [[self view] bringSubviewToFront:self.botImage];
-    
-    [[self view] bringSubviewToFront:self.actionsView];
-    [[self view] bringSubviewToFront:self.cameraTools];
+    [self orderViews];
 }
 
-#pragma mark - Animations
+#pragma mark - Handle transictions
 
 - (void)handlePickingPhotoToEdition
 {
-    [self.cameraTools setFrame:CGRectMake(320.0f, self.cameraTools.frame.origin.y, self.cameraTools.frame.size.width, self.cameraTools.frame.size.height)];
-    [self.cameraTools setHidden:NO];
-    
-    [UIView animateWithDuration:0.2f animations:^{
-        [self.actionsView setFrame:CGRectMake(-self.actionsView.frame.size.width, self.actionsView.frame.origin.y, self.actionsView.frame.size.width, self.actionsView.frame.size.height)];
-        
-        [self.cameraTools setFrame:CGRectMake(0.0f, self.cameraTools.frame.origin.y, self.cameraTools.frame.size.width, self.cameraTools.frame.size.height)];
-    }
-                     completion:^(BOOL finished) {
-                         [self.actionsView setHidden:YES];
-                     }];
+    [self animatePhotoPickingToEdition];
     
     self.blurredView = [EMMainScreenViewController buildBlurView];
     [[self selectedImageView] addSubview:self.blurredView];
@@ -120,15 +80,8 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
     [self.actionsView setHidden:NO];
     [self.blurSlider setValue:25.0f];
     
-    [UIView animateWithDuration:0.2f animations:^{
-        [self.cameraTools setFrame:CGRectMake(self.cameraTools.frame.size.width, self.cameraTools.frame.origin.y, self.cameraTools.frame.size.width, self.cameraTools.frame.size.height)];
-        
-        [self.actionsView setFrame:CGRectMake(0.0f, self.actionsView.frame.origin.y, self.actionsView.frame.size.width, self.actionsView.frame.size.height)];
-    }completion:^(BOOL finished)
-     {
-                         [self.cameraTools setHidden:YES];
-     }];
-        
+    [self animateEditionToPhotoPicking];
+    
     [self.selectedImageView removeFromSuperview];
     [self.photoImagePicker.view setHidden:NO];
     self.selectedImageView = nil;
@@ -140,112 +93,6 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
                            set:@"Photo Mode" forKey:kGAIScreenName] build]];
 }
 
-#pragma mark - IBAction methods
-
--(IBAction)takePictureAction:(id)sender
-{
-    [[self actionsView] setUserInteractionEnabled:NO];
-
-    [self closeObjectiveWithCompletionBlock:^{
-        [self.photoImagePicker takePicture];
-    }];
-
-}
-
-- (IBAction)sharePhoto:(id)sender
-{
-    UIImage *screenShot = [self screenshot];
-    
-    UIActivityViewController *activityController =[[UIActivityViewController alloc]initWithActivityItems:@[screenShot] applicationActivities:nil];
-    
-    [activityController setCompletionHandler:^(NSString *activityType, BOOL completed)
-     {
-         if (completed && activityType)
-         {
-             id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
-             [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
-                                    set:[NSString stringWithFormat:@"Photo shared -> %@",activityType] forKey:kGAIEventAction] build]];
-         }
-    }];
-    
-    [self presentViewController:activityController animated:YES completion:nil];
-}
-
-
--(IBAction)galleryAction:(id)sender
-{
-    UIImagePickerController *galleryPicker = [EMMainScreenViewController buildGalleryPickerController];
-    [galleryPicker setDelegate:self];
-    
-    [self presentViewController:galleryPicker animated:YES completion:NULL];
-}
-
-- (IBAction)toogleCircleAction:(id)sender
-{
-    BOOL toggleValue = ![self.circle isHidden];
-    [[self circle] setHidden:toggleValue];
-    [[self enableCircleButton] setSelected:toggleValue];
-}
-
-- (IBAction)saveImageAction:(id)sender
-{
-    UIImage *screenShot = [self screenshot];
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-    
-    [library writeImageToSavedPhotosAlbum:screenShot.CGImage orientation:ALAssetOrientationUp completionBlock:^(NSURL *assetURL, NSError *error)
-     {
-         if (error)
-         {
-             
-         }
-         else
-         {
-             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"title_alert", nil) message:NSLocalizedString(@"body_alert", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"ok_button", nil) otherButtonTitles:nil] show];
-             
-             id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
-             [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
-                                    set:@"Photo saved!" forKey:kGAIEventAction] build]];
-         }
-     }];
-}
-
-- (IBAction)changeCameraOrientationAction:(id)sender
-{
-    if (self.photoImagePicker.cameraDevice == UIImagePickerControllerCameraDeviceFront)
-    {
-        self.photoImagePicker.cameraDevice = UIImagePickerControllerCameraDeviceRear;
-    }
-    else
-    {
-        self.photoImagePicker.cameraDevice = UIImagePickerControllerCameraDeviceFront;
-    }
-    
-}
-
-- (IBAction)closeAction:(id)sender
-{
-    [self handleEditionToPickingPhoto];
-}
-
-- (IBAction)changeCameraFlashAction:(id)sender
-{
-    if (self.photoImagePicker.cameraFlashMode == UIImagePickerControllerCameraFlashModeOn)
-    {
-        self.photoImagePicker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOff;
-        [self.flashButton setSelected:NO];
-    }
-    else
-    {
-        self.photoImagePicker.cameraFlashMode = UIImagePickerControllerCameraFlashModeOn;
-        [self.flashButton setSelected:YES];
-    }
-}
-
-
-- (IBAction)sliderAction:(UISlider *)slider
-{
-    [self.blurredView setBlurRadius:slider.value];
-}
 #pragma mark - UIImagePickerDelegate Implementation
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -270,17 +117,14 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
         [[self view] addSubview:self.selectedImageView];
         [[self view] insertSubview:self.selectedImageView belowSubview:self.botImage];
         [[self view] insertSubview:self.selectedImageView belowSubview:self.topImage];
-
-        [self openObjectiveWithCompletionBlock:^{
-            
-        }];
+        
+        [self animateOpenObjectiveWithCompletionBlock:^{}];
         
         [[self actionsView] setUserInteractionEnabled:YES];
         [[self.photoImagePicker view] setHidden:YES];
         
         [self handlePickingPhotoToEdition];
     }
-    
 }
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

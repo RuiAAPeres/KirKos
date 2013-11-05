@@ -8,17 +8,9 @@
 
 #import "EMMainScreenViewController.h"
 
-@class FXBlurView;
-
 @interface EMMainScreenViewController (Style)
 
 - (void)setupUI;
-
-+ (UIImagePickerController *)buildPhotoPickerController;
-+ (UIImagePickerController *)buildGalleryPickerController;
-+ (UIView *)buildCircleWithCenter:(CGPoint)center;
-+ (UIImageView *)buildImageViewWithImage:(UIImage *)image;
-
-+ (FXBlurView *)buildBlurView;
+- (void)orderViews;
 
 @end

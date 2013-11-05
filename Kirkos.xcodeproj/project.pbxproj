@@ -13,13 +13,16 @@
 		C72FEDA51812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C72FEDA41812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m */; };
 		C72FEDA918132A44005BB932 /* UIImage+Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = C72FEDA818132A44005BB932 /* UIImage+Orientation.m */; };
 		C72FEDAC18133A5F005BB932 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = C72FEDAB18133A5F005BB932 /* UIColor+Hex.m */; };
-		C72FEDB618133C35005BB932 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDB518133C35005BB932 /* libGoogleAnalyticsServices.a */; };
-		C72FEDB818133C4D005BB932 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDB718133C4D005BB932 /* libGoogleAnalyticsServices.a */; };
 		C72FEDBA18133C55005BB932 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDB918133C55005BB932 /* CoreData.framework */; };
 		C72FEDBC18133C5D005BB932 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDBB18133C5D005BB932 /* SystemConfiguration.framework */; };
 		C72FEDBE18133C66005BB932 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDBD18133C66005BB932 /* libz.dylib */; };
 		C72FEDC018133E80005BB932 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C72FEDBF18133E80005BB932 /* AdSupport.framework */; };
-		C74B3E2218143362002A015F /* EMMainScreenViewController4Inches.xib in Resources */ = {isa = PBXBuildFile; fileRef = C74B3E2118143362002A015F /* EMMainScreenViewController4Inches.xib */; };
+		C74B1F8D18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B1F8C18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.m */; };
+		C74B1F9018299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B1F8F18299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.m */; };
+		C74B1F9318299FCD00DE871A /* EMMainScreenViewController+Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B1F9218299FCD00DE871A /* EMMainScreenViewController+Animations.m */; };
+		C74B1F961829A28F00DE871A /* EMMainScreenViewController+Actions.m in Sources */ = {isa = PBXBuildFile; fileRef = C74B1F951829A28F00DE871A /* EMMainScreenViewController+Actions.m */; };
+		C74B3E2218143362002A015F /* EMMainScreenViewController35Inches.xib in Resources */ = {isa = PBXBuildFile; fileRef = C74B3E2118143362002A015F /* EMMainScreenViewController35Inches.xib */; };
+		C7517B6C1829AAA8003BF1A7 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CDA4671829AA33008135AA /* libGoogleAnalyticsServices.a */; };
 		C76C1287181070D200C4910D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C1286181070D200C4910D /* Foundation.framework */; };
 		C76C1289181070D200C4910D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C1288181070D200C4910D /* CoreGraphics.framework */; };
 		C76C128B181070D200C4910D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76C128A181070D200C4910D /* UIKit.framework */; };
@@ -31,7 +34,7 @@
 		C76C12BF1810710D00C4910D /* EMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12B71810710D00C4910D /* EMAppDelegate.m */; };
 		C76C12C11810710D00C4910D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12BE1810710D00C4910D /* main.m */; };
 		C76C12C61810715F00C4910D /* EMMainScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12C41810715F00C4910D /* EMMainScreenViewController.m */; };
-		C76C12C71810715F00C4910D /* EMMainScreenViewController5Inches.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76C12C51810715F00C4910D /* EMMainScreenViewController5Inches.xib */; };
+		C76C12C71810715F00C4910D /* EMMainScreenViewController4Inches.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76C12C51810715F00C4910D /* EMMainScreenViewController4Inches.xib */; };
 		C76C12CD1810738000C4910D /* EMMainScreenViewController+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = C76C12CC1810738000C4910D /* EMMainScreenViewController+Style.m */; };
 		C79158BB18147EDE00E38CDD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C79158BA18147EDE00E38CDD /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -70,7 +73,15 @@
 		C72FEDBB18133C5D005BB932 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C72FEDBD18133C66005BB932 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C72FEDBF18133E80005BB932 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		C74B3E2118143362002A015F /* EMMainScreenViewController4Inches.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMainScreenViewController4Inches.xib; sourceTree = "<group>"; };
+		C74B1F8B18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+ViewsFactory.h"; sourceTree = "<group>"; };
+		C74B1F8C18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+ViewsFactory.m"; sourceTree = "<group>"; };
+		C74B1F8E18299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+ControllersFactory.h"; sourceTree = "<group>"; };
+		C74B1F8F18299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+ControllersFactory.m"; sourceTree = "<group>"; };
+		C74B1F9118299FCD00DE871A /* EMMainScreenViewController+Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+Animations.h"; sourceTree = "<group>"; };
+		C74B1F9218299FCD00DE871A /* EMMainScreenViewController+Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+Animations.m"; sourceTree = "<group>"; };
+		C74B1F941829A28F00DE871A /* EMMainScreenViewController+Actions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+Actions.h"; sourceTree = "<group>"; };
+		C74B1F951829A28F00DE871A /* EMMainScreenViewController+Actions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+Actions.m"; sourceTree = "<group>"; };
+		C74B3E2118143362002A015F /* EMMainScreenViewController35Inches.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMainScreenViewController35Inches.xib; sourceTree = "<group>"; };
 		C76C1283181070D200C4910D /* KirKos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KirKos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76C1286181070D200C4910D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C76C1288181070D200C4910D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,7 +98,7 @@
 		C76C12BE1810710D00C4910D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C76C12C31810715F00C4910D /* EMMainScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EMMainScreenViewController.h; sourceTree = "<group>"; };
 		C76C12C41810715F00C4910D /* EMMainScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EMMainScreenViewController.m; sourceTree = "<group>"; };
-		C76C12C51810715F00C4910D /* EMMainScreenViewController5Inches.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMainScreenViewController5Inches.xib; sourceTree = "<group>"; };
+		C76C12C51810715F00C4910D /* EMMainScreenViewController4Inches.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EMMainScreenViewController4Inches.xib; sourceTree = "<group>"; };
 		C76C12C91810730900C4910D /* EMConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EMConstants.h; sourceTree = "<group>"; };
 		C76C12CB1810738000C4910D /* EMMainScreenViewController+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+Style.h"; sourceTree = "<group>"; };
 		C76C12CC1810738000C4910D /* EMMainScreenViewController+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+Style.m"; sourceTree = "<group>"; };
@@ -97,6 +108,7 @@
 		C76C12F518109B4700C4910D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C76C12F718109B4E00C4910D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C79158BA18147EDE00E38CDD /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C7CDA4671829AA33008135AA /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = GoogleAnalyticsServicesiOS_3.02/libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,15 +116,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7517B6C1829AAA8003BF1A7 /* libGoogleAnalyticsServices.a in Frameworks */,
 				C72FEDC018133E80005BB932 /* AdSupport.framework in Frameworks */,
 				C72FEDBE18133C66005BB932 /* libz.dylib in Frameworks */,
 				C72FEDBC18133C5D005BB932 /* SystemConfiguration.framework in Frameworks */,
 				C72FEDBA18133C55005BB932 /* CoreData.framework in Frameworks */,
-				C72FEDB818133C4D005BB932 /* libGoogleAnalyticsServices.a in Frameworks */,
 				C76C1289181070D200C4910D /* CoreGraphics.framework in Frameworks */,
 				C76C128B181070D200C4910D /* UIKit.framework in Frameworks */,
 				C76C1287181070D200C4910D /* Foundation.framework in Frameworks */,
-				C72FEDB618133C35005BB932 /* libGoogleAnalyticsServices.a in Frameworks */,
 				3FA0480139C547BCA9DA7891 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,6 +209,7 @@
 		C76C1285181070D200C4910D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7CDA4671829AA33008135AA /* libGoogleAnalyticsServices.a */,
 				C72FEDBF18133E80005BB932 /* AdSupport.framework */,
 				C72FEDBD18133C66005BB932 /* libz.dylib */,
 				C72FEDBB18133C5D005BB932 /* SystemConfiguration.framework */,
@@ -300,8 +312,8 @@
 				C76C12CA1810737500C4910D /* Categories */,
 				C76C12C31810715F00C4910D /* EMMainScreenViewController.h */,
 				C76C12C41810715F00C4910D /* EMMainScreenViewController.m */,
-				C76C12C51810715F00C4910D /* EMMainScreenViewController5Inches.xib */,
-				C74B3E2118143362002A015F /* EMMainScreenViewController4Inches.xib */,
+				C76C12C51810715F00C4910D /* EMMainScreenViewController4Inches.xib */,
+				C74B3E2118143362002A015F /* EMMainScreenViewController35Inches.xib */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -321,6 +333,14 @@
 				C76C12CC1810738000C4910D /* EMMainScreenViewController+Style.m */,
 				C72FEDA31812FEEF005BB932 /* EMMainScreenViewController+TakePicture.h */,
 				C72FEDA41812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m */,
+				C74B1F8B18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.h */,
+				C74B1F8C18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.m */,
+				C74B1F8E18299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.h */,
+				C74B1F8F18299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.m */,
+				C74B1F9118299FCD00DE871A /* EMMainScreenViewController+Animations.h */,
+				C74B1F9218299FCD00DE871A /* EMMainScreenViewController+Animations.m */,
+				C74B1F941829A28F00DE871A /* EMMainScreenViewController+Actions.h */,
+				C74B1F951829A28F00DE871A /* EMMainScreenViewController+Actions.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -409,8 +429,8 @@
 			files = (
 				C72FEDA21812C795005BB932 /* Images.xcassets in Resources */,
 				C79158BB18147EDE00E38CDD /* Localizable.strings in Resources */,
-				C74B3E2218143362002A015F /* EMMainScreenViewController4Inches.xib in Resources */,
-				C76C12C71810715F00C4910D /* EMMainScreenViewController5Inches.xib in Resources */,
+				C74B3E2218143362002A015F /* EMMainScreenViewController35Inches.xib in Resources */,
+				C76C12C71810715F00C4910D /* EMMainScreenViewController4Inches.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,10 +497,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76C12C61810715F00C4910D /* EMMainScreenViewController.m in Sources */,
+				C74B1F961829A28F00DE871A /* EMMainScreenViewController+Actions.m in Sources */,
 				C76C12C11810710D00C4910D /* main.m in Sources */,
+				C74B1F9318299FCD00DE871A /* EMMainScreenViewController+Animations.m in Sources */,
 				C70531DE1811EB020033D25B /* EMAppDelegate+Style.m in Sources */,
 				C72FEDA918132A44005BB932 /* UIImage+Orientation.m in Sources */,
 				C76C12BF1810710D00C4910D /* EMAppDelegate.m in Sources */,
+				C74B1F8D18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.m in Sources */,
+				C74B1F9018299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.m in Sources */,
 				C72FEDAC18133A5F005BB932 /* UIColor+Hex.m in Sources */,
 				C76C12CD1810738000C4910D /* EMMainScreenViewController+Style.m in Sources */,
 				C72FEDA51812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m in Sources */,
@@ -633,8 +657,7 @@
 				INFOPLIST_FILE = "Kirkos/Supporting Files/Kirkos-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/ruiperes/Documents/iOS\\ Dev/Kirkos/Kirkos/3rd\\ Party/Google\\ Analytics",
-					/Users/ruiperes/Desktop/GoogleAnalyticsServicesiOS_3.02,
+					"$(SRCROOT)/GoogleAnalyticsServicesiOS_3.02",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -666,8 +689,7 @@
 				INFOPLIST_FILE = "Kirkos/Supporting Files/Kirkos-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/ruiperes/Documents/iOS\\ Dev/Kirkos/Kirkos/3rd\\ Party/Google\\ Analytics",
-					/Users/ruiperes/Desktop/GoogleAnalyticsServicesiOS_3.02,
+					"$(SRCROOT)/GoogleAnalyticsServicesiOS_3.02",
 				);
 				OTHER_LDFLAGS = (
 					"-ObjC",

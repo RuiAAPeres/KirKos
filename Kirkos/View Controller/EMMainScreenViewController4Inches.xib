@@ -1,90 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EMMainScreenViewController">
             <connections>
-                <outlet property="acceptPhotoButton" destination="ZQ7-2b-p5i" id="akQ-6A-kVE"/>
-                <outlet property="actionsView" destination="4MX-yi-Df5" id="4a4-Md-iox"/>
-                <outlet property="blurSlider" destination="hQH-Qf-dej" id="O3u-Qn-Gkg"/>
-                <outlet property="botImage" destination="09R-qu-KU1" id="axb-Yc-QDy"/>
-                <outlet property="cameraTools" destination="EmC-ae-FwI" id="BGQ-oS-ATB"/>
-                <outlet property="cancelButton" destination="lw7-Ma-Wil" id="eV7-Kn-8ci"/>
-                <outlet property="enableCircleButton" destination="CG7-09-aK6" id="T2j-dW-N1H"/>
-                <outlet property="flashButton" destination="zL9-Ba-Ku8" id="t1q-uZ-kh7"/>
-                <outlet property="galleryButton" destination="uUj-Ot-704" id="Koq-hH-2HR"/>
-                <outlet property="sharePhotoButton" destination="0eA-Y3-QKp" id="6Ds-BR-qhi"/>
-                <outlet property="sliderView" destination="THH-X2-2tX" id="ZDL-Dy-2ag"/>
-                <outlet property="switchCameraMode" destination="VZc-9S-FBh" id="hm0-uu-Ath"/>
-                <outlet property="takePhotoButton" destination="VzQ-j1-9EB" id="oaF-rg-uVx"/>
-                <outlet property="topImage" destination="FEC-RT-nJn" id="b5o-fN-mbh"/>
-                <outlet property="view" destination="DDB-I5-SBg" id="b9H-kv-qC8"/>
+                <outlet property="acceptPhotoButton" destination="rze-jR-tKe" id="JZP-e1-BVF"/>
+                <outlet property="actionsView" destination="GOf-8I-JlO" id="pc4-e0-cth"/>
+                <outlet property="blurSlider" destination="cH9-nh-kXd" id="vhK-Wd-JnP"/>
+                <outlet property="botImage" destination="816-eQ-gfh" id="VyH-ON-j5H"/>
+                <outlet property="cameraTools" destination="2Xz-a7-luZ" id="oKS-rg-DTe"/>
+                <outlet property="cancelButton" destination="8C1-rn-hJh" id="Scf-aw-hOD"/>
+                <outlet property="enableCircleButton" destination="Pur-IX-85B" id="FF3-QO-CDy"/>
+                <outlet property="flashButton" destination="K4D-Tm-Kqt" id="hD9-VF-IB4"/>
+                <outlet property="galleryButton" destination="nYd-I9-evi" id="f18-Y3-lm1"/>
+                <outlet property="sharePhotoButton" destination="Q2M-cc-Har" id="JxN-ED-W5u"/>
+                <outlet property="sliderView" destination="ZL3-Nv-JEh" id="CfV-Zd-R0Q"/>
+                <outlet property="switchCameraMode" destination="Ok5-Tq-HLh" id="ktS-wI-Ph4"/>
+                <outlet property="takePhotoButton" destination="UYt-oD-wJJ" id="IwK-0w-zX2"/>
+                <outlet property="topImage" destination="6Go-A6-uFJ" id="3mk-DX-8De"/>
+                <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="DDB-I5-SBg">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_capture" id="FEC-RT-nJn">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_capture" id="09R-qu-KU1">
-                    <rect key="frame" x="0.0" y="160" width="320" height="160"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="VZc-9S-FBh" userLabel="Switch Camera Mode">
-                    <rect key="frame" x="273" y="7" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <state key="normal" image="btn_SwitchCamera">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="changeCameraOrientationAction:" destination="-1" eventType="touchUpInside" id="fPJ-Ho-dfv"/>
-                    </connections>
-                </button>
-                <view contentMode="scaleToFill" id="4MX-yi-Df5" userLabel="Actions View">
-                    <rect key="frame" x="0.0" y="384" width="320" height="96"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="uUj-Ot-704" userLabel="Gallery Button">
-                            <rect key="frame" x="20" y="30" width="40" height="35"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="btn_PhotoLibrary">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="galleryAction:" destination="-1" eventType="touchUpInside" id="T8m-5P-6DE"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CG7-09-aK6" userLabel="Toggle Button">
-                            <rect key="frame" x="265" y="30" width="35" height="35"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" image="btn_CircleFrame_on">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                            <connections>
-                                <action selector="toogleCircleAction:" destination="-1" eventType="touchUpInside" id="cZG-aM-tvy"/>
-                            </connections>
-                        </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="VzQ-j1-9EB" userLabel="Take Photo Button">
-                            <rect key="frame" x="123" y="10" width="75" height="75"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                            <state key="normal" image="btn_Shutter"/>
-                            <connections>
-                                <action selector="takePictureAction:" destination="-1" eventType="touchUpInside" id="GMe-Ji-Cdf"/>
-                            </connections>
-                        </button>
-                    </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zL9-Ba-Ku8" userLabel="Flash Button">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K4D-Tm-Kqt" userLabel="Flash Button">
                     <rect key="frame" x="14" y="7" width="30" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -92,72 +36,128 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="changeCameraFlashAction:" destination="-1" eventType="touchUpInside" id="C8f-2R-ygl"/>
+                        <action selector="changeCameraFlashAction:" destination="-1" eventType="touchUpInside" id="OXs-7E-Hfv"/>
                     </connections>
                 </button>
-                <view hidden="YES" contentMode="scaleToFill" id="EmC-ae-FwI" userLabel="Tools View">
-                    <rect key="frame" x="0.0" y="384" width="320" height="96"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Ok5-Tq-HLh" userLabel="Switch Camera Mode">
+                    <rect key="frame" x="273" y="7" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="btn_SwitchCamera">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="changeCameraOrientationAction:" destination="-1" eventType="touchUpInside" id="4US-pl-IRv"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" id="GOf-8I-JlO" userLabel="Actions View">
+                    <rect key="frame" x="0.0" y="384" width="320" height="184"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="nYd-I9-evi" userLabel="Gallery Button">
+                            <rect key="frame" x="20" y="74" width="40" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="btn_PhotoLibrary">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="galleryAction:" destination="-1" eventType="touchUpInside" id="Gzy-lZ-JUF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Pur-IX-85B" userLabel="Toggle Button">
+                            <rect key="frame" x="265" y="74" width="35" height="35"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="btn_CircleFrame_on">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="toogleCircleAction:" destination="-1" eventType="touchUpInside" id="Nq5-ep-L7b"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="UYt-oD-wJJ" userLabel="Take Photo Button">
+                            <rect key="frame" x="122" y="54" width="75" height="75"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" image="btn_Shutter"/>
+                            <connections>
+                                <action selector="takePictureAction:" destination="-1" eventType="touchUpInside" id="Kb7-8F-qr9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" id="2Xz-a7-luZ" userLabel="Tools View">
+                    <rect key="frame" x="0.0" y="384" width="320" height="184"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
-                        <view contentMode="scaleToFill" id="THH-X2-2tX" userLabel="Slider View">
+                        <view contentMode="scaleToFill" id="ZL3-Nv-JEh" userLabel="Slider View">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" id="hQH-Qf-dej">
+                                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="25" minValue="0.0" maxValue="50" id="cH9-nh-kXd">
                                     <rect key="frame" x="18" y="8" width="284" height="34"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="minimumTrackTintColor" red="0.42352941179999998" green="0.47843137250000001" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="thumbTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <connections>
-                                        <action selector="sliderAction:" destination="-1" eventType="valueChanged" id="10m-IC-e2r"/>
+                                        <action selector="sliderAction:" destination="-1" eventType="valueChanged" id="XRU-el-ezG"/>
                                     </connections>
                                 </slider>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lw7-Ma-Wil" userLabel="Close Button">
-                            <rect key="frame" x="20" y="50" width="46" height="46"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8C1-rn-hJh" userLabel="Close Button">
+                            <rect key="frame" x="20" y="93" width="46" height="46"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <state key="normal" image="btn_delete">
                                 <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="OwB-5y-qeb"/>
+                                <action selector="closeAction:" destination="-1" eventType="touchUpInside" id="gwA-mQ-rP5"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0eA-Y3-QKp" userLabel="Share Button">
-                            <rect key="frame" x="137" y="50" width="46" height="46"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q2M-cc-Har" userLabel="Share Button">
+                            <rect key="frame" x="137" y="93" width="46" height="46"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             <state key="normal" image="btn_share">
                                 <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="sharePhoto:" destination="-1" eventType="touchUpInside" id="z3S-oZ-4ui"/>
+                                <action selector="sharePhotoAction:" destination="-1" eventType="touchUpInside" id="iYf-lM-J1b"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZQ7-2b-p5i" userLabel="Accept Button">
-                            <rect key="frame" x="255" y="50" width="46" height="46"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rze-jR-tKe" userLabel="Accept Button">
+                            <rect key="frame" x="255" y="93" width="46" height="46"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                             <state key="normal" image="btn_check">
                                 <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="saveImageAction:" destination="-1" eventType="touchUpInside" id="CkA-G1-97s"/>
+                                <action selector="saveImageAction:" destination="-1" eventType="touchUpInside" id="dKu-gp-C3u"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_capture" id="6Go-A6-uFJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_capture" id="816-eQ-gfh">
+                    <rect key="frame" x="0.0" y="160" width="320" height="160"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
     <resources>
