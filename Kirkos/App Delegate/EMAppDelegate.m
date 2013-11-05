@@ -38,7 +38,7 @@ static NSString *const kMainScreenViewController4Inches = @"EMMainScreenViewCont
 {
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     
-    static NSString *kGaPropertyId = @"UA-44995350-1";
+    static NSString *kGaPropertyId = @"";
     id tracker = [[GAI sharedInstance] trackerWithTrackingId:kGaPropertyId];
     [tracker set:kGAIUseSecure value:[@NO stringValue]];
     [[GAI sharedInstance] setDefaultTracker:tracker];

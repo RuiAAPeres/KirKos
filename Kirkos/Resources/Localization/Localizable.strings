@@ -6,7 +6,7 @@
   Copyright (c) 2013 Emov. All rights reserved.
 */
 
-"title_alert" = "Success";
-"body_alert" = "Image saved on your Photo Library.";
+"title_success" = "Success";
+"body_success" = "Image saved on your Photo Library.";
 
 "ok_button" = "Awesome!";

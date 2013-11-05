@@ -76,7 +76,7 @@
          }
          else
          {
-             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"title_alert", nil) message:NSLocalizedString(@"body_alert", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"ok_button", nil) otherButtonTitles:nil] show];
+             [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"title_success", nil) message:NSLocalizedString(@"body_sucesss", nil) delegate:nil cancelButtonTitle:NSLocalizedString(@"ok_button", nil) otherButtonTitles:nil] show];
              
              id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
              [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
