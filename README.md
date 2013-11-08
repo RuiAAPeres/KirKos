@@ -17,3 +17,6 @@ Well, that's up to you. If you would like to see some feature on KirKos you are 
 ### Contact
 
 You can reach me on my twitter [@Xsody](https://twitter.com/XSody).
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/RuiAAPeres/kirkos/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
