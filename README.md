@@ -1,6 +1,8 @@
 KirKos, Focus on the most important
 ======
 
+![Image 1](https://dl.dropboxusercontent.com/u/14102938/image1.png)
+![Image 2](https://dl.dropboxusercontent.com/u/14102938/image2.png)
 
 [KirKos](https://itunes.apple.com/us/app/kirkos/id730158035?ls=1&mt=8) is an application I did in less than 24 hours, as a challenge. You can read more about it [here](http://codeplease.wordpress.com/2013/11/02/kirkos-app-development-under-24h). At the time of my first commits, the only thing I wanted was something safe on a repo (yes I know, it's stupid), so please disregard the commit's messages. 
 
