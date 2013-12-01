@@ -10,7 +10,8 @@ KirKos, Focus on the most important
 Requirements
 ============
 
-You will need [cocoapods](http://cocoapods.org/) in order to build this project 
+* You will need [cocoapods](http://cocoapods.org/) in order to build this project 
+* You will also need a real device to run the project.
 
 
 Why sharing it?
