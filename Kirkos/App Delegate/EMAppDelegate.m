@@ -14,8 +14,8 @@
 #import "GAIDictionaryBuilder.h"
 #import "GAIFields.h"
 
-static NSString *const kMainScreenViewController35Inches = @"EMMainScreenViewController4Inches";
-static NSString *const kMainScreenViewController4Inches = @"EMMainScreenViewController35Inches";
+static NSString *const kMainScreenViewController35Inches = @"EMMainScreenViewController35Inches";
+static NSString *const kMainScreenViewController4Inches = @"EMMainScreenViewController4Inches" ;
 
 @implementation EMAppDelegate
 
