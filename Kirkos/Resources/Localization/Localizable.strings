@@ -10,3 +10,9 @@
 "body_success" = "Image saved on your Photo Library.";
 
 "ok_button" = "Awesome!";
+
+//used in the action sheet
+"cancel" = "Cancel";
+"select_action_sheet_option" = "Please select an option";
+"open_instagram" = "Open in instagram";
+"share" = "Share";

@@ -10,6 +10,7 @@
 #import "EMMainScreenViewController+Animations.h"
 #import "EMMainScreenViewController+TakePicture.h"
 #import "EMMainScreenViewController+ControllersFactory.h"
+#import "EMMainScreenViewController+Share.h"
 #import "FXBlurView.h"
 
 #import "GAI.h"
@@ -31,22 +32,9 @@
 
 - (IBAction)sharePhotoAction:(id)sender
 {
-    UIImage *screenShot = [self screenshot];
-    
-    UIActivityViewController *activityController =[[UIActivityViewController alloc]initWithActivityItems:@[screenShot] applicationActivities:nil];
-    
-    [activityController setCompletionHandler:^(NSString *activityType, BOOL completed)
-     {
-         if (completed && activityType)
-         {
-             id<GAITracker> defaultTracker = [[GAI sharedInstance] defaultTracker];
-             [defaultTracker send:[[[GAIDictionaryBuilder createAppView]
-                                    set:[NSString stringWithFormat:@"Photo shared -> %@",activityType] forKey:kGAIEventAction] build]];
-         }
-     }];
-    
-    [self presentViewController:activityController animated:YES completion:nil];
+    [self openShareWithOrWithoutInstagram];
 }
+
 
 -(IBAction)galleryAction:(id)sender
 {
@@ -120,4 +108,7 @@
 - (IBAction)closeAction:(id)sender{
     [self handleEditionToPickingPhoto];
 }
+
+
+
 @end
