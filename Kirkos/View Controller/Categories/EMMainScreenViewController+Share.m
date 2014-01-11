@@ -13,13 +13,21 @@
 #import "GAIDictionaryBuilder.h"
 #import "GAIFields.h"
 
+
+static NSString* const instagramSchemeURL = @"instagram://";
+
+NS_ENUM(NSInteger, ActionSheetOptions) {
+    OpenInInstagram = 0,
+    Share = 1
+};
+
 @implementation EMMainScreenViewController (Share)
 
 @dynamic documentsController;
 
 -(void) openShareWithOrWithoutInstagram {
     //If the user has instagram we show an actionsheet with open on instagram + share
-    NSURL *instagramURL = [NSURL URLWithString:@"instagram://"];
+    NSURL *instagramURL = [NSURL URLWithString:instagramSchemeURL];
     
     if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
         
@@ -40,11 +48,13 @@
 
 - (void)actionSheet:(UIActionSheet *)popup clickedButtonAtIndex:(NSInteger)buttonIndex {
     switch (buttonIndex) {
-        case 0:
+        case OpenInInstagram:
             [self openPhotoInInstagram];
             break;
-        case 1:
+        case Share:
             [self share];
+            break;
+        default:
             break;
     }
 }
@@ -69,7 +79,7 @@
 }
 
 -(void) openPhotoInInstagram {
-    NSURL *instagramURL = [NSURL URLWithString:@"instagram://"];
+    NSURL *instagramURL = [NSURL URLWithString:instagramSchemeURL];
     if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
         NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
         NSString *savedImagePath = [documentsDirectory stringByAppendingPathComponent:@"Image.igo"];
