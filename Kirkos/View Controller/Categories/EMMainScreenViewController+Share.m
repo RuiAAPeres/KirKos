@@ -16,9 +16,9 @@
 
 static NSString* const instagramSchemeURL = @"instagram://";
 
-NS_ENUM(NSInteger, ActionSheetOptions) {
-    OpenInInstagram = 0,
-    Share = 1
+NS_ENUM(NSInteger, ActionSheetOption) {
+    OpenInstagramActionSheetOption,
+    ShareActionSheetOption
 };
 
 @implementation EMMainScreenViewController (Share)
@@ -48,10 +48,10 @@ NS_ENUM(NSInteger, ActionSheetOptions) {
 
 - (void)actionSheet:(UIActionSheet *)popup clickedButtonAtIndex:(NSInteger)buttonIndex {
     switch (buttonIndex) {
-        case OpenInInstagram:
+        case OpenInstagramActionSheetOption:
             [self openPhotoInInstagram];
             break;
-        case Share:
+        case ShareActionSheetOption:
             [self share];
             break;
         default:
