@@ -14,7 +14,7 @@
 #import "GAIFields.h"
 
 
-static NSString* const instagramSchemeURL = @"instagram://";
+static NSString* const kInstagramSchemeURL = @"instagram://";
 
 NS_ENUM(NSInteger, ActionSheetOption) {
     OpenInstagramActionSheetOption,
@@ -27,7 +27,7 @@ NS_ENUM(NSInteger, ActionSheetOption) {
 
 -(void) openShareWithOrWithoutInstagram {
     //If the user has instagram we show an actionsheet with open on instagram + share
-    NSURL *instagramURL = [NSURL URLWithString:instagramSchemeURL];
+    NSURL *instagramURL = [NSURL URLWithString:kInstagramSchemeURL];
     
     if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
         
@@ -79,7 +79,7 @@ NS_ENUM(NSInteger, ActionSheetOption) {
 }
 
 -(void) openPhotoInInstagram {
-    NSURL *instagramURL = [NSURL URLWithString:instagramSchemeURL];
+    NSURL *instagramURL = [NSURL URLWithString:kInstagramSchemeURL];
     if ([[UIApplication sharedApplication] canOpenURL:instagramURL]) {
         NSString *documentsDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
         NSString *savedImagePath = [documentsDirectory stringByAppendingPathComponent:@"Image.igo"];
