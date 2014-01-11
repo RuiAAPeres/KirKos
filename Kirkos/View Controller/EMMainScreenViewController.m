@@ -32,6 +32,8 @@ static CGRect cameraFrame = {{0.0f,0.0f},{320.0f,384.0f}};
 @property (nonatomic,strong)FXBlurView *blurredView;
 @property (nonatomic,strong)UIImageView *selectedImageView;
 
+@property (nonatomic, strong) UIDocumentInteractionController* documentsController;
+
 @end
 
 @implementation EMMainScreenViewController

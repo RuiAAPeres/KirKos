@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3FA0480139C547BCA9DA7891 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BC5DCD86B142A781920700 /* libPods.a */; };
+		5A2A813E1881B1AE00171F0F /* EMMainScreenViewController+Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2A813D1881B1AE00171F0F /* EMMainScreenViewController+Share.m */; };
 		C70531DE1811EB020033D25B /* EMAppDelegate+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = C70531DD1811EB020033D25B /* EMAppDelegate+Style.m */; };
 		C72FEDA21812C795005BB932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C72FEDA11812C795005BB932 /* Images.xcassets */; };
 		C72FEDA51812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C72FEDA41812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m */; };
@@ -52,6 +53,8 @@
 /* Begin PBXFileReference section */
 		09BC5DCD86B142A781920700 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F86EEDF06A404182A5AEF9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5A2A813C1881B1AE00171F0F /* EMMainScreenViewController+Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMMainScreenViewController+Share.h"; sourceTree = "<group>"; };
+		5A2A813D1881B1AE00171F0F /* EMMainScreenViewController+Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMMainScreenViewController+Share.m"; sourceTree = "<group>"; };
 		C70531DC1811EB020033D25B /* EMAppDelegate+Style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EMAppDelegate+Style.h"; sourceTree = "<group>"; };
 		C70531DD1811EB020033D25B /* EMAppDelegate+Style.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EMAppDelegate+Style.m"; sourceTree = "<group>"; };
 		C72FEDA11812C795005BB932 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				C74B1F9218299FCD00DE871A /* EMMainScreenViewController+Animations.m */,
 				C74B1F941829A28F00DE871A /* EMMainScreenViewController+Actions.h */,
 				C74B1F951829A28F00DE871A /* EMMainScreenViewController+Actions.m */,
+				5A2A813C1881B1AE00171F0F /* EMMainScreenViewController+Share.h */,
+				5A2A813D1881B1AE00171F0F /* EMMainScreenViewController+Share.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -396,9 +401,6 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Emov;
 				TargetAttributes = {
-					C76C1282181070D200C4910D = {
-						DevelopmentTeam = G99PDGYAB4;
-					};
 					C76C129D181070D200C4910D = {
 						TestTargetID = C76C1282181070D200C4910D;
 					};
@@ -506,6 +508,7 @@
 				C74B1F8D18299D1900DE871A /* EMMainScreenViewController+ViewsFactory.m in Sources */,
 				C74B1F9018299DDE00DE871A /* EMMainScreenViewController+ControllersFactory.m in Sources */,
 				C72FEDAC18133A5F005BB932 /* UIColor+Hex.m in Sources */,
+				5A2A813E1881B1AE00171F0F /* EMMainScreenViewController+Share.m in Sources */,
 				C76C12CD1810738000C4910D /* EMMainScreenViewController+Style.m in Sources */,
 				C72FEDA51812FEEF005BB932 /* EMMainScreenViewController+TakePicture.m in Sources */,
 			);
