@@ -13,7 +13,9 @@
 
 - (void)setupUI
 {
-    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName,[UIFont fontWithName:@"HelveticaNeue" size:19.0],NSFontAttributeName,nil]];
+    [[UINavigationBar appearance] setTitleTextAttributes:
+        @{NSForegroundColorAttributeName: [UIColor whiteColor],
+                     NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue" size:19.0]}];
 }
 
 
