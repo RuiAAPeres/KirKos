@@ -39,5 +39,6 @@
 @property (nonatomic,strong,readonly)UIView *circle;
 @property (nonatomic,strong,readonly)FXBlurView *blurredView;
 
+- (void)handleEditionToPickingPhoto;
 
 @end

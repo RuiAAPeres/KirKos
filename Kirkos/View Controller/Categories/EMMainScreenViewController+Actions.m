@@ -117,4 +117,7 @@
     [self.blurredView setBlurRadius:slider.value];
 }
 
+- (IBAction)closeAction:(id)sender{
+    [self handleEditionToPickingPhoto];
+}
 @end
